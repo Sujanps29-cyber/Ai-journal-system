@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Emotion Journal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background: radial-gradient(circle at 20% 20%,#1a1a2e,#0f0f1b 40%,#050510);
+overflow-x:hidden;
+color:white;
+}
+
+.backgroundGlow{
+position:fixed;
+width:600px;
+height:600px;
+background: radial-gradient(circle,#7f5af0,#00000000);
+filter:blur(120px);
+top:-200px;
+left:-200px;
+animation:moveGlow 15s infinite alternate;
+}
+
+@keyframes moveGlow{
+from{transform:translate(0,0)}
+to{transform:translate(300px,200px)}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="backgroundGlow"></div>
+
+<div id="root"></div>
+
+</body>
+</html>
